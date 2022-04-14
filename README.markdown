@@ -41,3 +41,15 @@ Mais informações
 
 **Leandro Pedrosa**
 - Meu [Linkedin](https://www.linkedin.com/in/leandro-p-a28291103/)
+- Email: leandropedrosalp@gmail.com
+
+projeto: 
+- [X] Java; 
+- [X] Ant; 
+- [X] MySQL; 
+- [X] Tomcat; 
+- [X] Fila; [Link](https://github.com/leandropedrosa/prova_mazzatech/tree/master/src/br/com/mazzatech/portal/rabbitmq)
+- [X] Job; [Link](https://github.com/leandropedrosa/prova_mazzatech/tree/master/src/br/com/mazzatech/portal/job)
+- [X] Jsf(Primefaces); Richfaces
+- [X] PowerBI; [Link](https://github.com/leandropedrosa/prova_mazzatech/blob/master/WebContent/pages/produto/lista.jspx#L71)
+- [ ] Liferay (Opcional). 
