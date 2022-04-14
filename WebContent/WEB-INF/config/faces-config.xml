@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+
+	<application>
+		<!-- Spring EL Resolver -->
+		<el-resolver>
+			org.springframework.web.jsf.el.SpringBeanFacesELResolver
+		</el-resolver>
+		<!-- Facelets -->
+		<view-handler>com.sun.facelets.FaceletViewHandler</view-handler>
+		<!-- Internacionalizacao -->
+		<message-bundle>
+	    		br.com.mazzatech.portal.resources.Messages
+	    	</message-bundle>
+	    	<locale-config>
+	    		<default-locale>pt_BR</default-locale>
+	    		<supported-locale>pt_BR</supported-locale>
+	    	</locale-config>
+    </application>
+	
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/pages/login.jspx</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<from-view-id>/pages/login.jspx</from-view-id>
+		<navigation-case>
+			<from-outcome>home</from-outcome>
+			<to-view-id>/home.jspx</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>carrinhoDeCompras</from-outcome>
+			<to-view-id>/pages/carrinho.jspx</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+</faces-config>
