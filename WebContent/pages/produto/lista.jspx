@@ -43,7 +43,7 @@
 						</h:column>
 						<h:column>
 							<f:facet name="header">
-								<h:outputText value="Preço" />
+								<h:outputText value="PreÃ§o" />
 							</f:facet>
 							<h:outputText value="#{produto.preco}">
 								<f:convertNumber type="number" maxFractionDigits="3"
@@ -52,7 +52,7 @@
 						</h:column>
 						<h:column>
 							<f:facet name="header">
-								<h:outputText value="Ações" />
+								<h:outputText value="AÃ§Ãµes" />
 							</f:facet>
 							<h:commandLink value="editar"
 								action="#{produtoBean.preparaParaAlterar}">
@@ -67,8 +67,7 @@
 						</h:column>
 					</h:dataTable>
 					<div align="right">
-						<h:outputLink
-							value="https://app.powerbi.com/view?r=eyJrIjoiYThkYWMyYjAtMDdhOS00YmJiLWI3NGMtNTk4NGZhMzI0ZWI5IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9">PowerBI Produtos</h:outputLink>
+						<iframe title="banco - dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYThkYWMyYjAtMDdhOS00YmJiLWI3NGMtNTk4NGZhMzI0ZWI5IiwidCI6ImIxY2E3YTgxLWFiZjgtNDJlNS05OGM2LWYyZjJhOTMwYmEzNiJ9" frameborder="0" allowFullScreen="true"></iframe>
 					</div>
 				</div>
 			</h:form>
